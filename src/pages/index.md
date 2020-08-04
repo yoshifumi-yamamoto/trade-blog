@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: 　 現役看護師トレーダー
 image: /img/chart.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: 〜平凡看護師から億プレーヤーへの奮闘記〜
 mainpitch:
   title: Why Kaldi
   description: >
