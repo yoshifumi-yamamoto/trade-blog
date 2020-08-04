@@ -1,19 +1,25 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: About our values
+title: 免責事項
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+##### 参考にする上で
+当ブログにアクセスいただき、ありがとうございます。こちらのブログの注意事項を記載いたしますので、必ずご確認くださいませ。
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+#### 注意事項
+- 投資・投機はいかなる場合においても自己責任です。
+- 私がエントリーする位置を記述しているだけであり、読者様に同様の売買を”推奨”する内容ではございません。
+- 記事タイトルにおける「絶好のポイント」とは、勝ちトレードが100%保証されている売買タイミングという意味ではありません。私の手法にとって優位性の高いポイントという意味です。
+- 質問を頂いても、ポジションの詳細や売買タイミングについてのご質問はお答えできません。
+- 質問を頂いても、チャート分析や線引きの手法についての質問はお答えできません。
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+#### 用語解説
+- レジスタンスライン->上値抵抗線。上昇トレンドの山の頂点。
+- サポートライン->下値支持線。下降トレンドの谷の頂点。
+- ローリバ->役割転換(ロールリバーサル)。レジスタンスラインとサポートラインの役割が切り替わる。
+- MA->単純移動平均線(SMA)。
+- EMA->指数平滑移動平均線(EMA)。
+- BB->ボリンジャーバンド。
+- 短期PO->MA5,13,21で形成されるパーフェクトオーダー。
+- 長期PO->MA21,EMA90,EMA200で形成されるパーフェクトオーダー。
