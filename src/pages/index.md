@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: 現役看護師トレーダー
-image: /img/chart.jpg
+image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: 〜平凡看護師から億プレーヤーへの奮闘記〜
 mainpitch:
