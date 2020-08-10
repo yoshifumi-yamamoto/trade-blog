@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 title: 現役看護師トレーダー
-image: /img/home-jumbotron.jpg
+image: /img/chart_2.jpg
 heading: Great coffee with a conscience
-subheading: 〜平凡看護師から億プレーヤーへの奮闘記〜
+subheading: 〜看護師から億プレーヤーへの奮闘記〜
 mainpitch:
   title: Why Kaldi
   description: >
