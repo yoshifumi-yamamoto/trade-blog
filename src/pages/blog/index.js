@@ -22,7 +22,7 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            相場分析 & レビュー
+            相場分析
           </h1>
         </div>
         <section className="section">
