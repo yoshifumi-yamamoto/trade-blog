@@ -1,13 +1,10 @@
 ---
-heading: Great coffee with a conscience
+heading: ロールリバーサル手法
 path: /products
 templateKey: product-page
 title: テクニック
 image: /img/chart.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+description: ここでは私が実際に実践で使用している手法をご紹介します。使用いているインジケータやエントリーのタイミング、利確・損切りポイントについて解説していきます。
 intro:
   blurbs:
     - image: /img/coffee.png
