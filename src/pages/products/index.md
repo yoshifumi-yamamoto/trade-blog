@@ -3,7 +3,7 @@ heading: ロールリバーサル手法
 path: /products
 templateKey: product-page
 title: テクニック
-image: /img/chart.jpg
+image: /img/chart-min.jpg
 description: ここでは私が実際に実践で使用している手法をご紹介します。使用いているインジケータやエントリーのタイミング、利確・損切りポイントについて解説していきます。
 intro:
   blurbs:
