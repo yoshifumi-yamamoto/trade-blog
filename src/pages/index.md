@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: 現役看護師トレーダー
-image: /img/chart_2.jpg
+image: /img/chart_2-min.jpg
 heading: Great coffee with a conscience
 subheading: 〜看護師から億プレーヤーへの奮闘記〜
 mainpitch:
