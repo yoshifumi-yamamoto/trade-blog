@@ -4,7 +4,7 @@ path: /products
 templateKey: product-page
 title: テクニック
 image: /img/chart-min.jpg
-description: ここでは私が実際に実践で使用している手法をご紹介します。使用いているインジケータやエントリーのタイミング、利確・損切りポイントについて解説していきます。
+description: ここでは私が実際に実践で使用しているロールリバーサル手法という手法をご紹介します。使用いているインジケータやエントリーのタイミング、利確・損切りポイントについて解説していきます。
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -90,5 +90,70 @@ pricing:
         - Green or roasted beans
         - Unlimited varieties
       plan: Custom
-      price: ??
+      price: "100"
+idc:
+  heading: インジケータ
+  description: 私が日頃トレードで使用しているインジケータです。
+  sma:
+    title: 単純移動平均線(SMA)
+    param1: 5
+    param2: 13
+    param3: 21
+  ema:
+    title: 指数平滑移動平均線(EMA)
+    param1: 75
+    param2: 200
+  bb: 
+    title: ボリンジャーバンド 期間(21)
+    param: -2
+obj:
+  heading: オブジェクト
+  description: 私がトレードで使用しているオブジェクトです。
+  horizontal: 水平線
+  trend: トレンドライン
+  fib: フィボナッチ
+charts:
+  heading: チャート
+  description: 私が相場分析とエントリーに使用している時間軸です。
+  daily: 日足(長期)
+  fourHour: 4時間足(中期)
+  oneHour: 1時間足(短期)
+  fiveMinute: 5分足
+performance:
+  heading: パフォーマンス
+  description: 当手法の1通貨ペアあたりの平均パフォーマンスです。
+  chance: エントリー回数は1通貨ペア辺り週に1回
+  pips: 月平均約+20pips
+  winRate: 勝率約50%
+analysis: 
+  heading: 相場分析方法
+  point1: 日足で目立つ高値、安値にそれぞれ意識ラインを引き、そこを高値圏・安値圏とする
+  point2: 4時間足で直近数日間のレンジ幅を把握し高値と安値にラインを引く
+  point3: 4時間足で長期の方向性を判断する
+  point4: 1時間足で直近の意識ラインを引く
+  point5: エントリープランを決定する
+  point6: 5分足でエントリーのタイミングをはかる
+points: 
+  heading: 相場分析ポイント
+  point1: 長期と中期の方向性が一致しない場合は売り買い両方を狙うが多くの利益を望まないようにする
+  point2: 1,4時間足でトレンドがわかりづらい相場の時は別の通貨ペアを観察する(レンジ相場中は狙わない)
+conditions:
+  heading: エントリー条件
+  point1: 5分足で上位足と同一方向のPO形成まで待つ
+  point2: PO形成して意識ラインをブレイク後に一旦押し目(戻り)を待ち、そのラインまで戻って来たところでトレンド方向にエントリーする
+  point3: MA13またはMA21などのインジケータが重なるとより精度が高い
+  point4: リスクリワードレシオは2以上
+  point5: 15分足で狙った方向とは逆行したPOを形成した場合はエントリーしない
+payment: 
+  heading: 決済
+  loss: 
+    heading: 損切り
+    point1: 意識ラインを明確に下抜けたら損切りする
+    point2: ボラティリティにもよるが-10pips以内に抑える
+  profit:
+    heading: 利益確定
+    point1: 4時間足の直近の高値(安値)を最大利確ポイントとする
+    point2: 2ポジション以上保有し1時間足の直近の高値(安値)付近を1ポジション目の利確地点とする
+    point3: 1ポジション目を利確したらもう1ポジションのストップを建値までトレールする
+    point4: 1ポジション目の利確地点をブレイクした場合はそのラインから-10pips程度のところまでトレールし最大利確ポイントまで追いかける
 ---
