@@ -96,16 +96,16 @@ idc:
   description: 私が日頃トレードで使用しているインジケータです。
   sma:
     title: 単純移動平均線(SMA)
-    param1: 5
-    param2: 13
-    param3: 21
+    param1: 5(赤)
+    param2: 13(黄)
+    param3: 21(青)
   ema:
     title: 指数平滑移動平均線(EMA)
-    param1: 75
-    param2: 200
+    param1: 75(紫)
+    param2: 200(白)
   bb: 
     title: ボリンジャーバンド 期間(21)
-    param: -2
+    param: ±2
 obj:
   heading: オブジェクト
   description: 私がトレードで使用しているオブジェクトです。

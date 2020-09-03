@@ -223,18 +223,18 @@ ProductPageTemplate.propTypes = {
     description: PropTypes.string,
     sma: PropTypes.shape({
       title: PropTypes.string,
-      param1: PropTypes.number,
-      param2: PropTypes.number,
-      param3: PropTypes.number
+      param1: PropTypes.string,
+      param2: PropTypes.string,
+      param3: PropTypes.string
     }),
     ema: PropTypes.shape({
       title: PropTypes.string,
-      param1: PropTypes.number,
-      param2: PropTypes.number,
+      param1: PropTypes.string,
+      param2: PropTypes.string,
     }),
     bb: PropTypes.shape({
       title: PropTypes.string,
-      param: PropTypes.number
+      param: PropTypes.string
     })
   }),
   obj: PropTypes.shape({
