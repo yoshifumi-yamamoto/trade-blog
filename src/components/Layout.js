@@ -52,11 +52,11 @@ const TemplateWrapper = ({ children }) => {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
-        <script
+        {/* <script
           data-ad-client="pub-7745429707764414"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
+        ></script> */}
       </Helmet>
       <Navbar />
       <div>{children}</div>
