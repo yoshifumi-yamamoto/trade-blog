@@ -1,60 +1,44 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql, StaticQuery } from "gatsby";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 class BlogRoll extends React.Component {
-  render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+  constructor() {
+    super();
 
+    this.state = {
+      marker: 6,
+    };
+
+    this.loadList = this.loadList.bind(this);
+  }
+
+  loadList() {
+    this.setState({
+      marker: this.state.marker + 4,
+    });
+  }
+
+  render() {
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+    const slicePosts = posts.slice(0, this.state.marker);
     return (
       <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </article>
-            </div>
+        {slicePosts &&
+          slicePosts.map(({ node: post }) => (
+            <Posts post={post} key={post.id} />
           ))}
+          <div className="column is-12 has-text-centered">
+        {posts.length > this.state.marker ? (
+          <span className='btn more' onClick={this.loadList}>SEE MORE</span>
+        ) : (
+          " "
+        )}
+        </div>
       </div>
-    )
+    );
   }
 }
 
@@ -64,7 +48,7 @@ BlogRoll.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export default () => (
   <StaticQuery
@@ -76,7 +60,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 200)
               id
               fields {
                 slug
@@ -101,4 +85,49 @@ export default () => (
     `}
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
-)
+);
+
+const Posts = ({ post }) => {
+  return (
+    <div className="is-parent column is-6">
+      <article
+        className={`blog-list-item tile is-child box notification ${
+          post.frontmatter.featuredpost ? "is-featured" : ""
+        }`}
+      >
+        <header>
+          {post.frontmatter.featuredimage ? (
+            <div className="featured-thumbnail">
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: post.frontmatter.featuredimage,
+                  alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                }}
+              />
+            </div>
+          ) : null}
+          <p className="post-meta">
+            <Link
+              className="title has-text-primary is-size-4"
+              to={post.fields.slug}
+            >
+              {post.frontmatter.title}
+            </Link>
+            <span> &bull; </span>
+            <span className="subtitle is-size-5 is-block">
+              {post.frontmatter.date}
+            </span>
+          </p>
+        </header>
+        <p>
+          {post.excerpt}
+          <br />
+          <br />
+          <Link className="button" to={post.fields.slug}>
+            Keep Reading →
+          </Link>
+        </p>
+      </article>
+    </div>
+  );
+};
