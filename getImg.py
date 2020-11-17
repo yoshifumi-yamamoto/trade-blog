@@ -3,7 +3,7 @@ import json
 from bs4 import BeautifulSoup # pip install bs4
 import datetime
 import tinify
-tinify.key = "ZpFdqyBgrBm7Pv1d0TL8v4Q1QZ2qbb91"
+tinify.key = "JJN9ZVJysJm6k6L158d6NSC2pLxq1hPB"
 d_today = str(datetime.date.today())
 
 try:
